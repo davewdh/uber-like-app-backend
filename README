@@ -1,0 +1,36 @@
+The Location class (Entity object):
+	Contains map coordinates as well as the street names.
+
+The User class (Entity object):
+	Contains CoVoiture user information.
+
+The Customer class (Entity object):
+	A User who can hail a ride.
+
+The Driver class (Entity object):
+	A User who can give a ride.
+
+The CustomerList class (Container object):
+	A linked list of all Customers.
+
+The DriverList class (Container object):
+	A linked list of all Drivers with a specialized findRide function.
+
+The CoVoiture class (Control object):
+	Manages the Drivers and Customers of CoVoiture.
+	Coordinates rideshares from Drivers for Customers.
+
+The Controller class (Control object):
+	Controls the interaction of CoVoiture with the View.
+
+The View class (Boundary object):
+	Provides a menu, takes input, and gives output.
+
+We will be using std::cout as the main View output object for error reporting.
+
+Instructions for compiling and running the source files:
+	for compiling:
+		make
+		
+	for running: 
+		./a3
