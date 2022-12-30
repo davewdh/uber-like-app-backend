@@ -1,32 +1,38 @@
-The Location class (Entity object):
-	Contains map coordinates as well as the street names.
+Implemented an Uber-like application called CoVoiture (which is a play on covoiturage, which is French for ride-share). 
+CoVoiture maintains two lists of Users, one of Drivers and one of Customers. Each of these users has a current location in the city. 
+A Customer can request a ride from our app. When a ride is requested, the closest Driver that has the proper criteria is selected and the Customer is notified.
 
-The User class (Entity object):
-	Contains CoVoiture user information.
 
-The Customer class (Entity object):
-	A User who can hail a ride.
+Classes Overview:
+	The Location class (Entity object):
+		Contains map coordinates as well as the street names.
 
-The Driver class (Entity object):
-	A User who can give a ride.
+	The User class (Entity object):
+		Contains CoVoiture user information.
 
-The CustomerList class (Container object):
-	A linked list of all Customers.
+	The Customer class (Entity object):
+		A User who can hail a ride.
 
-The DriverList class (Container object):
-	A linked list of all Drivers with a specialized findRide function.
+	The Driver class (Entity object):
+		A User who can give a ride.
 
-The CoVoiture class (Control object):
-	Manages the Drivers and Customers of CoVoiture.
-	Coordinates rideshares from Drivers for Customers.
+	The CustomerList class (Container object):
+		A linked list of all Customers.
 
-The Controller class (Control object):
-	Controls the interaction of CoVoiture with the View.
+	The DriverList class (Container object):
+		A linked list of all Drivers with a specialized findRide function.
 
-The View class (Boundary object):
-	Provides a menu, takes input, and gives output.
+	The CoVoiture class (Control object):
+		Manages the Drivers and Customers of CoVoiture.
+		Coordinates rideshares from Drivers for Customers.
 
-We will be using std::cout as the main View output object for error reporting.
+	The Controller class (Control object):
+		Controls the interaction of CoVoiture with the View.
+
+	The View class (Boundary object):
+		Provides a menu, takes input, and gives output.
+
+	We will be using std::cout as the main View output object for error reporting.
 
 Instructions for compiling and running the source files:
 	for compiling:
